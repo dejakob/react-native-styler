@@ -19,8 +19,10 @@ describe('StyleManager', () => {
                         backgroundColor: 'yellow'
                     },
                     footer: {
-                        tabItem: {
-                            flexDirection: 'row'
+                        tabs: {
+                            tabItem: {
+                                flexDirection: 'row'
+                            }
                         }
                     }
                 }
@@ -31,7 +33,7 @@ describe('StyleManager', () => {
             
             expect(StyleManager.getStyle('app__header'))
                 .toEqual({ backgroundColor: 'yellow' });
-            expect(StyleManager.getStyle('app__footer__tabItem'))
+            expect(StyleManager.getStyle('app__footer__tabs__tabItem'))
                 .toEqual({ flexDirection: 'row' });
         });
     })
