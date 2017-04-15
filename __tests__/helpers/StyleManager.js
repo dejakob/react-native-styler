@@ -28,8 +28,11 @@ describe('StyleManager', () => {
 
             StyleManager.createStyle(styleObject);
             StyleManager.render();
-            console.log('result', StyleManager.getStyle('app__header'));
-
+            
+            expect(StyleManager.getStyle('app__header'))
+                .toEqual({ backgroundColor: 'yellow' });
+            expect(StyleManager.getStyle('app__footer__tabItem'))
+                .toEqual({ flexDirection: 'row' });
         });
     })
 });
