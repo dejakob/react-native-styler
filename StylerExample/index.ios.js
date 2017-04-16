@@ -19,10 +19,13 @@ import Header from './Header';
 
 export default class StylerExample extends Component {
   render() {
+    console.log('current theme name', this.props.currentThemeName);
+
     return (
       <StylerProvider>
         <View>
           <Header
+            currentThemeName={this.props.currentThemeName}
             title="TITLE"
           />
           <Button
