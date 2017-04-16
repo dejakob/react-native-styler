@@ -11,7 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
-import StylerProvider from '../lib/components/StylerProvider';
+import { StylerProvider } from 'react-native-styler';
 import Header from './Header';
 
 export default class StylerExample extends Component {
@@ -19,7 +19,9 @@ export default class StylerExample extends Component {
     return (
       <StylerProvider>
         <View>
-          <Header />
+          <Header
+            title="TITLE"
+          />
           
         </View>
       </StylerProvider>

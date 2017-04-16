@@ -1,4 +1,8 @@
 {
+  "name": "react-native-styler",
+  "version": "0.0.1",
+  "description": "Enhance React Native styling",
+  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
