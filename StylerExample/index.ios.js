@@ -12,6 +12,7 @@ import {
   View
 } from 'react-native';
 import { StylerProvider } from 'react-native-styler';
+import theme from './themes/default.theme';
 import Header from './Header';
 
 export default class StylerExample extends Component {
