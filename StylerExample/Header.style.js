@@ -1,6 +1,6 @@
 import { createStyle } from 'react-native-styler';
 
-export default createStyle({
+createStyle({
     header: {
         container: {
             flexDirection: 'row',

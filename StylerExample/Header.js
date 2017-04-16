@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { getStyle } from 'react-native-styler';
+import style from './Header.style';
 
 /**
  * <Header />

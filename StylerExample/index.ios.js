@@ -22,7 +22,6 @@ export default class StylerExample extends Component {
           <Header
             title="TITLE"
           />
-          
         </View>
       </StylerProvider>
     );

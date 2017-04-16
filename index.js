@@ -9,7 +9,8 @@ import {
     getCurrentTheme,
     changeTheme,
     addOnThemeChangeListener,
-    removeOnThemeChangeListener
+    removeOnThemeChangeListener,
+    createTheme
 } from './lib/helpers/ThemeManager';
 
 export {
@@ -23,5 +24,6 @@ export {
     getCurrentTheme,
     changeTheme,
     addOnThemeChangeListener,
-    removeOnThemeChangeListener
+    removeOnThemeChangeListener,
+    createTheme
 };
