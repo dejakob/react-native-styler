@@ -8,10 +8,18 @@ createStyle({
             justifyContent: 'space-between'
         },
         backButton: {
-            backgroundColor: 'theme:secondary'
+            backgroundColor: 'theme:secondary',
+            height: 20,
+            width: 20
         },
         title: {
-            color: 'theme:primary'
+            color: 'theme:primary',
+            fontWeight: '600'
+        },
+        closeButton: {
+            backgroundColor: 'theme:secondary',
+            height: 20,
+            width: 20
         }
     }
 });

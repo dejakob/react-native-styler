@@ -19,6 +19,9 @@ function Header(props) {
             >
                 {props.title}
             </Text>
+            <View
+                style={getStyle('header__closeButton')}
+            />
         </View>
     );
 }
