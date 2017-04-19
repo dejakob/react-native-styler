@@ -18,24 +18,36 @@ import blueTheme from './themes/blue.theme';
 import Header from './Header';
 
 export default class StylerExample extends Component {
+  constructor() {
+    super();
+    this._renderContent = this._renderContent.bind(this);
+  }
+
   render() {
-    console.log('current theme name', this.props.currentThemeName);
 
     return (
-      <StylerProvider>
-        <View>
-          <Header
-            currentThemeName={this.props.currentThemeName}
-            title="TITLE"
-          />
-          <Button
-            title="Use blue theme"
-            onPress={() => changeTheme('blue')}
-          />
-        </View>
-      </StylerProvider>
-    );
+      <StylerProvider
+        content={this._renderContent}
+      />
+    )
   }
+
+  _renderContent({ currentTheme }) {
+    console.log('render content', this.props);
+
+    return (
+      <View>
+        <Header
+          currentTheme={currentTheme}
+          title="TITLE"
+        />
+        <Button
+          title="Use blue theme"
+          onPress={() => changeTheme('blue')}
+        />
+      </View>
+    )
+  };
 }
 
 AppRegistry.registerComponent('StylerExample', () => StylerExample);
