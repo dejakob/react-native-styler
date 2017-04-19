@@ -32,13 +32,10 @@ export default class StylerExample extends Component {
     )
   }
 
-  _renderContent({ currentTheme }) {
-    console.log('render content', this.props);
-
+  _renderContent() {
     return (
       <View>
         <Header
-          currentTheme={currentTheme}
           title="TITLE"
         />
         <Button
