@@ -10,7 +10,7 @@ createStyle({
         backButton: {
             backgroundColor: 'theme:secondary',
             height: 20,
-            width: '0.3vw'
+            width: '30vw'
         },
         title: {
             color: 'theme:primary',
@@ -19,7 +19,7 @@ createStyle({
         closeButton: {
             backgroundColor: 'theme:secondary',
             height: 20,
-            width: '0.3vw'
+            width: '30vw'
         }
     }
 });
