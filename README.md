@@ -7,6 +7,52 @@ Enhance styling on React Native
 * Easy implementation of themes with instant rerender when theme changes
 * Middlewares that can transform style declarations
 
+Figure.js
+```
+<View
+    style={getStyle('figure__container')}
+>
+    <Image
+        style={getStyle('figure__image')}
+        source={require('example.jpg')}
+    />
+    <View
+        style={getStyle('figure__label__wrapper')}
+    >
+        <Text
+            style={getStyle('figure__label__text')}
+        />
+    </View>
+</View>
+```
+
+figure-style.js
+```
+createStyle({
+    figure: {
+        container: {
+            height: '60h4s',
+            backgroundColor: 'theme:primary'
+        },
+        image: {
+            height: '46h4s',
+            width: '46h4s',
+            borderRadius: '23h4s'
+        },
+        label: {
+            wrapper: {
+                marginTop: '3h4s'
+            },
+            text: {
+                fontSize: '11h4s',
+                fontColor: 'theme:secondary'
+            }
+        }
+    }
+});
+```
+
+
 ## Methods
 ### connectStyler
 Method to connect the styler with the root of your project
