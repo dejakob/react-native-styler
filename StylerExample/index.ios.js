@@ -1,37 +1,31 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * Sample React Native Styler App
  */
-
 import React, { Component } from 'react';
-import { Button } from 'react-native';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { AppRegistry, View, Button } from 'react-native';
 
 // Import connectStyler
-import { connectStyler, changeTheme } from 'react-native-styler';
+import { connectStyler, getStyle } from 'react-native-styler';
 
 // Import all themes and styling
 import './themes';
 import './styling';
 
+// Components to import
 import Header from './components/Header';
+import Main from './components/Main';
 
 export default class StylerExample extends Component {
   render() {
     return (
-      <View>
+      <View
+        style={getStyle('app')}
+      >
         <Header
           title="TITLE"
         />
-        <Button
-          title="Use blue theme"
-          onPress={() => changeTheme('blue')}
+        <Main
+
         />
       </View>
     )
