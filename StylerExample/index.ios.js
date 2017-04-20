@@ -24,9 +24,7 @@ export default class StylerExample extends Component {
         <Header
           title="TITLE"
         />
-        <Main
-
-        />
+        <Main />
       </View>
     )
   }

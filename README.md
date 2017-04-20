@@ -85,3 +85,13 @@ Just like CSS, use vh and vw to create sizes compared to the height or width of 
 // 30% of the width of the screen
 width: '30vw'
 ```
+
+### h4s and w4s
+In some cases, a component needs to resize based on the screen size.
+By adding 'h4s' or 'w4s', you provide the height or width the element should be on an iphone 4S screen
+and it will resize based on how much bigger / smaller the screen is.
+
+```
+// Font size will be bigger on an iPhone6 plus screen than an iPhone 5 for example
+fontSize: '16h4s'
+```
