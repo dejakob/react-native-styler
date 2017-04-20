@@ -1,5 +1,5 @@
 # react-native-styler
-Enhance styling on React Native
+Enhance styling on React Native [![build status](https://travis-ci.org/dejakob/react-native-styler.svg?branch=master)](https://travis-ci.org/dejakob/react-native-styler)
 
 [![NPM](https://nodei.co/npm/react-native-styler.png)](https://npmjs.org/package/react-native-styler)
 
