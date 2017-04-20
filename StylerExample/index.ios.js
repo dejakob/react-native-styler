@@ -12,14 +12,18 @@ import {
   Text,
   View
 } from 'react-native';
+
+// Import connectStyler
 import { connectStyler, changeTheme } from 'react-native-styler';
-import theme from './themes/default.theme';
-import blueTheme from './themes/blue.theme';
-import Header from './Header';
+
+// Import all themes and styling
+import './themes';
+import './styling';
+
+import Header from './components/Header';
 
 export default class StylerExample extends Component {
   render() {
-
     return (
       <View>
         <Header
@@ -34,4 +38,5 @@ export default class StylerExample extends Component {
   }
 }
 
+// Connect the styler to the rootComponent
 AppRegistry.registerComponent('StylerExample', () => connectStyler(<StylerExample />));
