@@ -12,27 +12,14 @@ import {
   Text,
   View
 } from 'react-native';
-import { StylerProvider, changeTheme } from 'react-native-styler';
+import { connectStyler, changeTheme } from 'react-native-styler';
 import theme from './themes/default.theme';
 import blueTheme from './themes/blue.theme';
 import Header from './Header';
 
 export default class StylerExample extends Component {
-  constructor() {
-    super();
-    this._renderContent = this._renderContent.bind(this);
-  }
-
   render() {
 
-    return (
-      <StylerProvider
-        content={this._renderContent}
-      />
-    )
-  }
-
-  _renderContent() {
     return (
       <View>
         <Header
@@ -44,7 +31,7 @@ export default class StylerExample extends Component {
         />
       </View>
     )
-  };
+  }
 }
 
-AppRegistry.registerComponent('StylerExample', () => StylerExample);
+AppRegistry.registerComponent('StylerExample', () => connectStyler(<StylerExample />));
