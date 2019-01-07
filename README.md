@@ -55,15 +55,21 @@ createStyle({
 ```
 
 
-## Methods
-### connectStyler
-Method to connect the styler with the root of your project
+## API
+### StylerProvider
+Connect styler to your project
 ```
-import { connectStyler } from 'react-native-styler';
+import { StylerProvider } from 'react-native-styler';
+```
 
-/* Root component */
-
-AppRegistry.registerComponent('StylerExample', () => connectStyler(<StylerExample />));
+```
+render() {
+    return (
+        <StylerProvider>
+            <MyComponent />
+        </StylerProvider>
+    )
+}
 ```
 
 ### createStyle
