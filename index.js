@@ -11,7 +11,7 @@ import {
     removeOnThemeChangeListener,
     createTheme
 } from './lib/helpers/ThemeManager';
-import connectStyler from './lib/helpers/connectStyler';
+import StylerProvider from './lib/components/StylerProvider';
 
 export {
     getStyle,
@@ -25,5 +25,5 @@ export {
     removeOnThemeChangeListener,
     createTheme,
 
-    connectStyler
+    StylerProvider
 };
