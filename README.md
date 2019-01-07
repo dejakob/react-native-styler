@@ -55,15 +55,21 @@ createStyle({
 ```
 
 
-## Methods
-### connectStyler
-Method to connect the styler with the root of your project
+## API
+### StylerProvider
+Connect styler to your project
 ```
-import { connectStyler } from 'react-native-styler';
+import { StylerProvider } from 'react-native-styler';
+```
 
-/* Root component */
-
-AppRegistry.registerComponent('StylerExample', () => connectStyler(<StylerExample />));
+```
+render() {
+    return (
+        <StylerProvider>
+            <MyComponent />
+        </StylerProvider>
+    )
+}
 ```
 
 ### createStyle
@@ -143,3 +149,5 @@ and it will resize based on how much bigger / smaller the screen is.
 // Font size will be bigger on an iPhone6 plus screen than an iPhone 5 for example
 fontSize: '16h4s'
 ```
+
+[![gitcheese.com](https://s3.amazonaws.com/gitcheese-ui-master/images/badge.svg)](https://www.gitcheese.com/donate/users/5782495/repos/88344303)
